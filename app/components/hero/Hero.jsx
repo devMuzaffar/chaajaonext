@@ -1,39 +1,58 @@
+"use client";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {Navigation} from 'swiper/modules';
+import 'swiper/css';
+
+import Card1 from "./cards/Card1";
+import Card2 from "./cards/Card2";
+import Card3 from './cards/Card3';
+import SlidePrevButton from './swiper/SlidePrevButton';
+import SlideNextButton from './swiper/SlideNextButton';
+import { useState } from 'react';
+
 
 
 const Hero = () => {
 
-    const bgDefaultStyling = {
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center"
-    }
+  // For Buttons
+  const [isBeginning, setIsBeginning] = useState(null);
+  const [isEnd, setIsEnd] = useState(null);
 
-    const bgCard1 = {
-        bgDefaultStyling,
-        backgroundImage: "url('./assets/card/1-mobile.png')",
-    };
+  // Changes the state of buttons upon swiper hook boolean changes
+  const handleSlideChange = (swiper) => {
+    setIsBeginning(swiper.isBeginning);
+    setIsEnd(swiper.isEnd);
+  }
 
 
   return (
-    <div className="border-2">
+    <div className="defaultpadding_hero border-2">
 
         {/* Card Section */}
-        <div>
+      <div className='border-2 relative'>
+      <Swiper
+      modules={[Navigation]}
+      slidesPerView={1}
+      spaceBetween={8}
+      loop={false}
+      onSlideChange={handleSlideChange}
+      navigation={{
+        prevEl: "swiper-prev",
+        nextEl: "swiper-next",
+      }}
+    >
+      
+      <SwiperSlide><Card3 /></SwiperSlide>
+      <SwiperSlide><Card1 /></SwiperSlide>
+      <SwiperSlide><Card2 /></SwiperSlide>
 
-            {/* Card 1 */}
-            <div style={bgCard1}
-            className="w-full h-96"
-            >
-                {/* Text Block */}
-                <div>
+      {/* Navigation Buttons */}
+      <SlidePrevButton isBeginning={isBeginning} />
+      <SlideNextButton isEnd={isEnd}/>
 
-
-                </div>
-
-                
-            </div>
-
-        </div>
+    </Swiper>
+      </div>
 
 
 

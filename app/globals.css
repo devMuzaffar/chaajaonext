@@ -13,3 +13,8 @@
 .defaultpadding{
     @apply p-4 sm:px-8 sm:py-2 md:py-4 md:px-16;
 }
+
+/* Default Padding Hero Component */
+.defaultpadding_hero{
+    @apply p-4 sm:px-8 sm:py-2 md:py-2 md:px-16;
+}
