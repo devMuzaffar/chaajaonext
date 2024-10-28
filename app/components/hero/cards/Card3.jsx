@@ -12,7 +12,7 @@ const Card3 = () => {
       <div className="flex flex-col items-center gap-5 h-full px-2 py-4 text-center md:justify-center md:w-1/2 md:items-start md:px-20 md:py-2">
 
         {/* Text */}
-        <div className="flex flex-col md:gap-2 border-2">
+        <div className="flex flex-col md:gap-2">
         <div className="flex items-center justify-center gap-2">
           <img className="inline w-1/2 md:w-3/4 bg-cover" src="./assets/logo.png" alt="" />
           <h2 className="text-3xl font-bold md:text-6xl">App</h2>
