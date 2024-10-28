@@ -6,25 +6,29 @@ const Card3 = () => {
   };
 
   return (
-    <div style={bgCard} className="bg-card3-mobile h-96 rounded-3xl md:bg-card3 md:flex md:items-center md:h-[calc(100vh-25vh)]">
+    <div style={bgCard} className="bg-card3-mobile h-[calc(100vh-20vh)] rounded-3xl md:bg-card3 md:flex md:items-center md:h-[calc(100vh-25vh)]">
       
       {/* Div Block */}
-      <div className="flex flex-col items-center gap-5 h-full px-2 py-4 text-center md:justify-center md:w-1/2 md:items-start md:px-20 md:py-2">
+      <div className="flex flex-col items-center gap-2 h-full px-2 py-4 text-center md:gap-5 md:justify-center md:w-1/2 md:items-center md:px-20 md:py-2">
 
-        {/* Text */}
-        <div className="flex flex-col md:gap-2">
-        <div className="flex items-center justify-center gap-2">
-          <img className="inline w-1/2 md:w-3/4 bg-cover" src="./assets/logo.png" alt="" />
+        {/* Text Block */}
+        <div className="flex flex-col">
+
+          {/* Chaajao App */}
+        <div className="flex items-center justify-center gap-3 md:justify-start">
+          <img className="inline w-2/5 md:w-4/6" src="./assets/logo.png" alt="" />
           <h2 className="text-3xl font-bold md:text-6xl">App</h2>
         </div>
         
-        <p className="text-sm tracking-[10px] md:text-5xl md:tracking-[12px]">Revealed By</p>
+        {/* Revelated By */}
+        <p className="text-sm tracking-[10px] md:text-left md:text-5xl md:tracking-[20px]">Revealed By</p>
 
-        <h3 className="font-bold text-2xl md:text-5xl">#TabishHashmi</h3>
+        {/* #Tabish Hashmi */}
+        <h3 className="font-bold text-2xl md:text-5xl md:pt-5">#TabishHashmi</h3>
         </div>
 
         {/* Button */}
-        <button className="bg-green-500 rounded-full text-sm w-max py-2 px-6 transition-all hover:bg-transparent font-medium text-white">
+        <button className="bg-green-500 rounded-full text-sm w-max py-2 px-6 transition-all font-medium text-white hover:bg-transparent hover:text-black md:px-10 md:py-3 md:text-lg">
           Watch Now
         </button>
 

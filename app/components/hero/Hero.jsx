@@ -1,8 +1,9 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { EffectFade, Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/effect-fade";
 
 import Card1 from "./cards/Card1";
 import Card2 from "./cards/Card2";
@@ -10,6 +11,8 @@ import Card3 from "./cards/Card3";
 import SlidePrevButton from "./swiper/SlidePrevButton";
 import SlideNextButton from "./swiper/SlideNextButton";
 import { useState } from "react";
+import featuresList from "./featureList";
+import FeatureCard from "./feature/FeatureCard";
 
 const Hero = () => {
   // For Buttons
@@ -23,15 +26,16 @@ const Hero = () => {
   };
 
   return (
-    <div className="defaultpadding_hero border-2">
+    <div className="defaultpadding_hero relative">
       {/* Card Section */}
       <div className="relative">
         <Swiper
           modules={[Navigation]}
           slidesPerView={1}
-          spaceBetween={8}
+          spaceBetween={0}
           loop={false}
           onSlideChange={handleSlideChange}
+          onInit={(swiper) => setIsBeginning(swiper.isBeginning)}
           navigation={{
             prevEl: "swiper-prev",
             nextEl: "swiper-next",
@@ -53,32 +57,44 @@ const Hero = () => {
         </Swiper>
       </div>
 
-      {/* Numbers Section */}
-      <div className="relative border-2">
+      {/* Numbers Section - Mobile & Tablet */}
+      <div className="absolute -bottom-12 left-0 z-10 w-full px-12 sm:px-20 md:hidden">
         <Swiper
-          modules={[Navigation]}
+          className="bg-white rounded-2xl shadow-lg"
+          modules={[Navigation, EffectFade]}
           slidesPerView={1}
-          spaceBetween={8}
-          loop={false}
-          onSlideChange={handleSlideChange}
+          spaceBetween={0}
+          loop={true}
+          loopPreventsSliding={false}
+          effect="fade"
           navigation={{
             prevEl: "swiper-prev",
             nextEl: "swiper-next",
           }}
         >
-          <SwiperSlide>
-            <div className="flex flex-col justify-center items-center">
-              <h2 className="text-2xl font-medium">
-                373,300<span className="text-primary">+</span>
-              </h2>
-              <p className="text-sm">MCQs with Video Solutions</p>
-            </div>
-          </SwiperSlide>
+          {/* Features List */}
+          {featuresList.map(({ numbers, text }, index) => (
+            <SwiperSlide>
+              <FeatureCard key={index} numbers={numbers} text={text} />
+            </SwiperSlide>
+          ))}
 
           {/* Navigation Buttons */}
-          <SlidePrevButton isBeginning={isBeginning} />
-          <SlideNextButton isEnd={isEnd} />
+          <SlidePrevButton className="left-5 sm:left-6" />
+          <SlideNextButton className="right-5 sm:right-6" />
         </Swiper>
+      </div>
+
+      {/* Numbers Section - Desktop */}
+      <div className="hidden absolute -bottom-10 left-0 z-10 px-36 w-full md:block">
+        <div className="flex rounded-2xl overflow-hidden border-x-8 border-y-4 border-white bg-white shadow-lg ">
+          {/* Features List */}
+          {featuresList.map(({ numbers, text }, index) => (
+            <div className="w-full">
+              <FeatureCard key={index} numbers={numbers} text={text} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

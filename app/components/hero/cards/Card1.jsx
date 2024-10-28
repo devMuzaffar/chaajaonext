@@ -6,10 +6,10 @@ const Card1 = () => {
   };
 
   return (
-    <div style={bgCard} className="bg-card1-mobile h-96 rounded-3xl md:bg-card1 md:flex md:items-center md:h-[calc(100vh-25vh)]">
+    <div style={bgCard} className="bg-card1-mobile h-[calc(100vh-20vh)] rounded-3xl md:bg-card1 md:flex md:items-center md:h-[calc(100vh-25vh)]">
       
       {/* Text Block */}
-      <div className="flex flex-col items-center gap-3 text-white h-full px-2 py-4 text-center md:justify-center md:w-1/2 md:text-left md:items-start md:px-20 md:py-2 md:gap-5">
+      <div className="flex flex-col items-center gap-3 text-white h-full px-2 py-8 text-center md:justify-center md:w-1/2 md:text-left md:items-start md:pr-0 md:pl-20 md:py-2 md:gap-5">
 
         <h2 className="text-xl font-medium md:text-5xl md:leading-tight">
           From <span className="text-secondary">Learning</span> to Succeeding,

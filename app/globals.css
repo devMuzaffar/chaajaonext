@@ -6,15 +6,20 @@
 
 /* App Default Config */
 .app{
-    @apply h-screen w-screen font-[poppins];
+    @apply h-screen w-screen font-[poppins] overflow-x-hidden;
 }
 
 /* Default Padding for all Components */
 .defaultpadding{
-    @apply p-4 sm:px-8 sm:py-2 md:py-4 md:px-16;
+    @apply p-4 sm:px-8 sm:py-3 md:py-4 md:px-16;
 }
 
-/* Default Padding Hero Component */
+/* Padding - Hero */
 .defaultpadding_hero{
-    @apply p-4 sm:px-8 sm:py-2 md:py-2 md:px-16;
+    @apply p-4 sm:px-8 md:py-8 md:px-16;
+}
+
+/* Padding - Blogs */
+.defaultpadding_blogs{
+    @apply px-0 pt-20 pb-12 sm:px-8 sm:py-24 md:py-28 md:px-16;
 }

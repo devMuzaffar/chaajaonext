@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="defaultpadding relative border-b-[1px] border-gray-100">
       {/* Mobile & Tablet Menu */}
       <div
-        className={`absolute bg-primary w-full top-16 left-0 overflow-hidden transition-all sm:top-20 md:hidden ${
+        className={`absolute bg-primary w-full top-16 left-0 overflow-hidden transition-all sm:top-20 md:hidden z-50 ${
           isMenuOpened ? "h-52" : "h-0"
         }`}
       >
