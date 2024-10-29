@@ -21,7 +21,7 @@ const coursesList = [
       color: "bg-[#EBFBF5]",
       icon: "./assets/feature/4.png",
       text: "SAT",
-      bottomText: "3000+ Questions | 110+ Lectures",
+      bottomText: "3,000+ Questions | 110+ Lectures",
     },
     {
       color: "bg-[#F5EFFE]",

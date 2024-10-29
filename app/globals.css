@@ -11,15 +11,25 @@
 
 /* Default Padding for all Components */
 .defaultpadding{
-    @apply p-4 sm:px-8 sm:py-3 md:py-4 md:px-16;
+    @apply p-4 sm:px-8 sm:py-3 md:py-4 md:px-20;
 }
 
 /* Padding - Hero */
 .defaultpadding_hero{
-    @apply p-4 sm:px-8 md:py-8 md:px-16;
+    @apply p-4 sm:px-8 md:py-8 md:px-20;
 }
 
 /* Padding - Blogs */
 .defaultpadding_blogs{
-    @apply px-0 pt-20 pb-12 sm:px-8 sm:py-24 md:py-28 md:px-16;
+    @apply px-0 pt-20 pb-12 sm:px-8 sm:py-24 md:py-28 md:px-20;
+}
+
+/* Default Padding - Courses */
+.defaultpadding_courses{
+    @apply px-4 pb-16 sm:px-8 md:px-20;
+}
+
+/* Default Padding - Features */
+.defaultpadding_features{
+    @apply px-4 pb-16 sm:px-8 md:px-36;
 }
