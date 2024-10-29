@@ -21,7 +21,7 @@ const Card3 = () => {
         </div>
         
         {/* Revelated By */}
-        <p className="text-sm tracking-[10px] md:text-left md:text-5xl md:tracking-[20px]">Revealed By</p>
+        <p className="text-sm tracking-[10px] md:text-left md:text-5xl md:tracking-[18px]">Revealed By</p>
 
         {/* #Tabish Hashmi */}
         <h3 className="font-bold text-2xl md:text-5xl md:pt-5">#TabishHashmi</h3>
