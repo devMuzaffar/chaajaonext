@@ -8,15 +8,20 @@ import { useState } from "react";
 const buttonDefaultStyle =
   "text-white text-sm flex gap-2 items-center justify-center py-2 px-6 rounded-full w-full";
 
-const Navbar = () => {
+// Scroll Nav Style
+const scrollNavStyle = "bg-white w-full z-50 transition-all";
+
+const Navbar = ({ isScroll }) => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const toggleMenu = () => setIsMenuOpened(!isMenuOpened);
+  const scrollCondition = isScroll ? "fixed top-0" : "absolute";
 
   return (
-    <div className="defaultpadding relative border-b-[1px] border-gray-100">
+    <div className={`${scrollNavStyle} ${scrollCondition}`}>
+      <div className="defaultpadding_navbar relative border-b-[1px] border-gray-100">
       {/* Mobile & Tablet Menu */}
       <div
-        className={`absolute bg-primary w-full top-16 left-0 overflow-hidden transition-all sm:top-20 md:hidden z-50 ${
+        className={`absolute bg-primary w-full top-16 left-0 overflow-hidden transition-all sm:top-20 md:hidden z-0 ${
           isMenuOpened ? "h-52" : "h-0"
         }`}
       >
@@ -75,6 +80,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

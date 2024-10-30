@@ -4,9 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* App Default Config */
+/* h-screen w-screen */
 .app{
-    @apply h-screen w-screen font-[poppins] overflow-x-hidden;
+    @apply font-[poppins] h-screen;
 }
 
 /* Default Padding for all Components */
@@ -14,9 +16,15 @@
     @apply p-4 sm:px-8 sm:py-3 md:py-4 md:px-20;
 }
 
+/* Default Padding for Navbar */
+.defaultpadding_navbar{
+    @apply p-4 sm:px-8 sm:py-3 md:py-4 md:px-20;
+}
+
 /* Padding - Hero */
+/* p-4 sm:px-8 md:py-8 md:px-20 */
 .defaultpadding_hero{
-    @apply p-4 sm:px-8 md:py-8 md:px-20;
+    @apply px-4 pb-4 pt-44 xs:pt-40 sm:px-8 md:pt-28 md:pb-8 md:px-20;
 }
 
 /* Padding - Blogs */

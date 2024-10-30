@@ -18,13 +18,16 @@ module.exports = {
         "card2-mobile": "url('/assets/card/2-mobile.png')",
         "card3": "url('/assets/card/3.jpeg')",
         "card3-mobile": "url('/assets/card/3-mobile.jpeg')",
+        "card4": "url('/assets/card/4.jpeg')",
+        "card4-mobile": "url('/assets/card/4-mobile.jpg')",
       },
       textColor: {
         primary: "#A91517",
         secondary: "#FFC20E",
       },
       screens: {
-        xs: "321px",
+        xs: "376px",
+        xxs: "321px",
       },
     },
   },

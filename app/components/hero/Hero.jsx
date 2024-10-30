@@ -13,6 +13,7 @@ import SlideNextButton from "./swiper/SlideNextButton";
 import { useState } from "react";
 import featuresList from "./featureList";
 import FeatureCard from "./feature/FeatureCard";
+import Card4 from "./cards/Card4";
 
 const Hero = () => {
   // For Buttons
@@ -32,7 +33,7 @@ const Hero = () => {
         <Swiper
           modules={[Navigation]}
           slidesPerView={1}
-          spaceBetween={0}
+          spaceBetween={1}
           loop={false}
           onSlideChange={handleSlideChange}
           onInit={(swiper) => setIsBeginning(swiper.isBeginning)}
@@ -41,6 +42,9 @@ const Hero = () => {
             nextEl: "swiper-next",
           }}
         >
+          <SwiperSlide>
+            <Card4 />
+          </SwiperSlide>
           <SwiperSlide>
             <Card3 />
           </SwiperSlide>
