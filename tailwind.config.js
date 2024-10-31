@@ -7,18 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderColor: {
+        primary: "#A91517",
+        secondary: "#FFC20E",
+      },
       backgroundColor: {
         primary: "#A91517",
         secondary: "#FFC20E",
       },
       backgroundImage: {
-        "card1": "url('/assets/card/1.png')",
+        card1: "url('/assets/card/1.png')",
         "card1-mobile": "url('/assets/card/1-mobile.png')",
-        "card2": "url('/assets/card/2.jpeg')",
+        card2: "url('/assets/card/2.jpeg')",
         "card2-mobile": "url('/assets/card/2-mobile.png')",
-        "card3": "url('/assets/card/3.jpeg')",
+        card3: "url('/assets/card/3.jpeg')",
         "card3-mobile": "url('/assets/card/3-mobile.jpeg')",
-        "card4": "url('/assets/card/4.jpeg')",
+        card4: "url('/assets/card/4.jpeg')",
         "card4-mobile": "url('/assets/card/4-mobile.jpg')",
       },
       textColor: {
