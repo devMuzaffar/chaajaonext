@@ -9,6 +9,8 @@ import {
   FeatureTabs,
   OurMap,
   YoutubeList,
+  DownloadApp,
+  Testimonial,
   
 } from "./components";
 import { useEffect, useState } from "react";
@@ -43,8 +45,10 @@ const App = () => {
       <FeatureTabs />
       <Achievements />
       <OurMap />
-
       <YoutubeList />
+      <DownloadApp />
+      <Testimonial />
+
     </div>
   );
 };

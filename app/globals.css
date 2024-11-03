@@ -56,7 +56,12 @@
   @apply p-4 sm:px-8 sm:py-3 md:py-8 md:px-40;
 }
 
-/* Default Padding - Our Map */
+/* Default Padding - Youtube List */
 .defaultpadding_youtube {
+  @apply p-4 sm:px-8 sm:py-8 md:px-40;
+}
+
+/* Default Padding - Download App Section */
+.defaultpadding_download {
   @apply p-4 sm:px-8 sm:py-8 md:px-40;
 }
