@@ -45,3 +45,18 @@
 .defaultpadding_tabs {
   @apply p-4 sm:px-8 md:px-36;
 }
+
+/* Default Padding - Achievements */
+.defaultpadding_achievements {
+  @apply px-4 pt-16 pb-8 sm:px-8 sm:pt-32 md:px-36 md:pt-24;
+}
+
+/* Default Padding - Our Map */
+.defaultpadding_map {
+  @apply p-4 sm:px-8 sm:py-3 md:py-8 md:px-40;
+}
+
+/* Default Padding - Our Map */
+.defaultpadding_youtube {
+  @apply p-4 sm:px-8 sm:py-8 md:px-40;
+}

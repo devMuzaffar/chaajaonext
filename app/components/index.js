@@ -6,3 +6,5 @@ export {default as Courses} from './courses/Courses';
 export {default as Features} from './features/Features';
 export {default as FeatureTabs} from './featuretabs/FeatureTabs';
 export {default as Achievements} from './achievements/Achievements';
+export {default as OurMap} from './ourmap/OurMap';
+export {default as YoutubeList} from './youtubelist/YoutubeList';

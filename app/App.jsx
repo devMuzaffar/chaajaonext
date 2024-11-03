@@ -7,6 +7,8 @@ import {
   Courses,
   Features,
   FeatureTabs,
+  OurMap,
+  YoutubeList,
   
 } from "./components";
 import { useEffect, useState } from "react";
@@ -40,6 +42,9 @@ const App = () => {
       <Features />
       <FeatureTabs />
       <Achievements />
+      <OurMap />
+
+      <YoutubeList />
     </div>
   );
 };

@@ -13,9 +13,9 @@ const FeatureTabs = () => {
   };
 
   return (
-    <div className="defaultpadding_tabs h-screen">
+    <div className="defaultpadding_tabs">
       {/* Material UI Tabs */}
-      <div className="">
+      <div>
         <Tabs
           value={value}
           onChange={handleChange}
