@@ -10,3 +10,5 @@ export {default as OurMap} from './ourmap/OurMap';
 export {default as YoutubeList} from './youtubelist/YoutubeList';
 export {default as DownloadApp} from './downloadapp/DownloadApp';
 export {default as Testimonial} from './testimonial/Testimonial';
+export {default as AvailNow} from './availnow/AvailNow';
+export {default as Footer} from './footer/Footer';

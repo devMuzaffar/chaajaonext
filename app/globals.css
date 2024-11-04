@@ -65,3 +65,18 @@
 .defaultpadding_download {
   @apply p-4 sm:px-8 sm:py-8 md:px-40;
 }
+
+/* Default Padding - Testimonials */
+.defaultpadding_testimonial {
+  @apply px-4 py-8 sm:px-8 sm:py-10 md:px-40;
+}
+
+/* Default Padding - Avail Now */
+.defaultpadding_availnow {
+  @apply p-6 sm:px-8 sm:py-24 md:px-40;
+}
+
+/* Default Padding - Avail Now */
+.defaultpadding_footer {
+  @apply px-6 pt-20 pb-8 sm:px-8 md:px-40;
+}

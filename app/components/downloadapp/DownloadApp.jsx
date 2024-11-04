@@ -2,7 +2,7 @@ import listIcons from "./list/iconsList";
 
 const DownloadApp = () => {
   return (
-    <div className="defaultpadding">
+    <div className="defaultpadding_download">
       <div className="flex flex-col-reverse gap-8 md:flex-row md:gap-2">
         {/* Image */}
         <div className="">

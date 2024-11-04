@@ -11,6 +11,8 @@ import {
   YoutubeList,
   DownloadApp,
   Testimonial,
+  AvailNow,
+  Footer,
   
 } from "./components";
 import { useEffect, useState } from "react";
@@ -20,11 +22,15 @@ const App = () => {
   const [isScroll, setIsScroll] = useState(false);
   const captureWindowScroll = () => {
     const scrollY = window.scrollY;
+
+    // Changes Navbar position Type on scroll
     if (scrollY > 100) {
       setIsScroll(true);
     } else {
       setIsScroll(false);
     }
+
+    // Enables 
   };
 
   useEffect(() => {
@@ -47,7 +53,13 @@ const App = () => {
       <OurMap />
       <YoutubeList />
       <DownloadApp />
+
+      {/* Fix Rotation */}
       <Testimonial />
+
+      <AvailNow />
+
+      <Footer />
 
     </div>
   );

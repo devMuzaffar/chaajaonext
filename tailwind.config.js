@@ -14,6 +14,7 @@ module.exports = {
       backgroundColor: {
         primary: "#A91517",
         secondary: "#FFC20E",
+        footer: "#24272C",
       },
       backgroundImage: {
 
@@ -38,6 +39,9 @@ module.exports = {
         "achv4-mobile": "url('/assets/achievements/4-mobile.jpeg')",
         achv5: "url('/assets/achievements/5.jpeg')",
         "achv5-mobile": "url('/assets/achievements/5-mobile.jpeg')",
+
+        // Circle
+        circleImg: "url('/assets/availnow/circle.png')",
       },
       textColor: {
         primary: "#A91517",
