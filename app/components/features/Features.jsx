@@ -41,7 +41,7 @@ const Features = () => {
 
       {/* Text */}
       <div className="text-sm text-center flex flex-col gap-3 md:px-72">
-        <h2 className="text-[28px] leading-9 font-medium md:text-3xl md:px-20">
+        <h2 className="text-[28px] leading-9 font-medium md:text-3xl md:px-16">
           All the <span className="text-primary">Features</span> You'll Ever
           Need to
           <span className="text-primary"> Ace</span> Your Exams!

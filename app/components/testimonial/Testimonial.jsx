@@ -5,23 +5,22 @@ import reviewList from "./data/reviewList";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "./styles/style.css";
 import { useRef } from "react";
 
-
-
 const Testimonial = () => {
   const imgRef = useRef(null);
-  const { scrollY } = useScroll({target: imgRef});
-  const rotateValue = useTransform(scrollY, [0, 12800], [0, 830]);
-  
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(rotateValue.current);
-  })
+  const { scrollY } = useScroll({ target: imgRef });
+  const rotateValue = useTransform(scrollY, [0, 20665], [0, 1380]);
 
   return (
     <div className="defaultpadding_testimonial md:flex md:items-center md:h-full">
@@ -63,9 +62,13 @@ const Testimonial = () => {
         <motion.img
           ref={imgRef}
           src="./assets/Testimonial/wheel.svg"
-          style={{rotate: rotateValue}}
+          style={{ rotate: rotateValue }}
         />
-        <img className="absolute inset-0 m-auto" src="./assets/testimonial/logo.svg" alt="" />
+        <img
+          className="absolute inset-0 m-auto"
+          src="./assets/testimonial/logo.svg"
+          alt=""
+        />
       </div>
     </div>
   );

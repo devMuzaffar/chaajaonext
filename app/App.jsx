@@ -13,7 +13,6 @@ import {
   Testimonial,
   AvailNow,
   Footer,
-  
 } from "./components";
 import { useEffect, useState } from "react";
 import Achievements from "./components/achievements/Achievements";
@@ -29,8 +28,6 @@ const App = () => {
     } else {
       setIsScroll(false);
     }
-
-    // Enables 
   };
 
   useEffect(() => {
@@ -53,14 +50,9 @@ const App = () => {
       <OurMap />
       <YoutubeList />
       <DownloadApp />
-
-      {/* Fix Rotation */}
       <Testimonial />
-
       <AvailNow />
-
       <Footer />
-
     </div>
   );
 };
