@@ -61,7 +61,7 @@ const Testimonial = () => {
       <div className="hidden w-full justify-center relative h-5/6 md:flex">
         <motion.img
           ref={imgRef}
-          src="./assets/Testimonial/wheel.svg"
+          src="/assets/Testimonial/wheel.svg"
           style={{ rotate: rotateValue }}
         />
         <img
