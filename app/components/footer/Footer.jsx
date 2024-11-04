@@ -76,7 +76,7 @@ const Footer = () => {
         <div className="flex flex-col gap-5 md:flex-row md:gap-52">
           {/* Call Us & Email Us */}
           {infoList.map(({ icon, text, title }) => (
-            <div className="flex flex-col gap-4 md:flex-row items-center">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center">
               <div className="p-4 bg-primary w-fit rounded-md">{icon}</div>
               <div>
                 <h2 className="font-bold tracking-wide">{title}</h2>
