@@ -12,3 +12,4 @@ export {default as DownloadApp} from './downloadapp/DownloadApp';
 export {default as Testimonial} from './testimonial/Testimonial';
 export {default as AvailNow} from './availnow/AvailNow';
 export {default as Footer} from './footer/Footer';
+export {default as AuthModal} from './authmodal/AuthModal';

@@ -13,6 +13,7 @@ import {
   Testimonial,
   AvailNow,
   Footer,
+  AuthModal,
 } from "./components";
 import { useEffect, useState } from "react";
 import Achievements from "./components/achievements/Achievements";
@@ -53,6 +54,10 @@ const App = () => {
       <Testimonial />
       <AvailNow />
       <Footer />
+
+      {/* Authentication Modal */}
+      <AuthModal />
+
     </div>
   );
 };
