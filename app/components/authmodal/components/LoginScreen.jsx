@@ -10,7 +10,11 @@ const LoginScreen = () => {
       </h2>
       <form className="flex flex-col gap-3">
         <InputField Icon={FaRegUser} placeholder={"Email/Username/Phone"} />
-        <InputField Icon={FaUnlockAlt} placeholder={"Password"} type={"password"}/>
+        <InputField
+          Icon={FaUnlockAlt}
+          placeholder={"Password"}
+          type={"password"}
+        />
       </form>
       <a className="text-primary text-xs font-semibold" href="">
         Forgot Password?

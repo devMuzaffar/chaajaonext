@@ -2,20 +2,22 @@
 import { IoMenu } from "react-icons/io5";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import links from "./list/links";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import MobileMenu from "./components/MobileMenu";
+import { AuthModalContext } from "@/app/contexts/authModalContext";
 
 // Button Style
 const buttonDefaultStyle =
   "text-white text-sm flex gap-2 items-center justify-center py-2 px-6 rounded-full w-full";
 
 // Scroll Nav Style
-const scrollNavStyle = "bg-white w-full z-50 transition-all";
+const scrollNavStyle = "bg-white w-full z-40 transition-all";
 
-const Navbar = ({ isScroll }) => {
+const Navbar = ({isScroll}) => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const toggleMenu = () => setIsMenuOpened(!isMenuOpened);
-  const toggleModal = () => setIsModalOpened(!isModalOpened);
+  const {setIsAuthModal} = useContext(AuthModalContext);
+  const toggleModal = () => setIsAuthModal(true);
   const scrollCondition = isScroll ? "fixed top-0" : "absolute";
 
   return (
@@ -63,6 +65,7 @@ const Navbar = ({ isScroll }) => {
             </button>
             <button
               className={`${buttonDefaultStyle} bg-primary col-span-2 xs:col-span-1`}
+              onClick={toggleModal}
             >
               Go to LMS
             </button>

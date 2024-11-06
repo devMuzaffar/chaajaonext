@@ -1,0 +1,11 @@
+.authModal {
+  @apply bg-opacity-50 bg-black flex justify-center items-baseline w-screen h-screen top-0 left-0 z-50 overflow-y-auto py-8 sm:py-16 md:overflow-y-hidden;
+}
+
+.form-control {
+  @apply border-none outline-none;
+}
+
+.form-control::placeholder {
+  @apply text-xs font-medium text-black;
+}

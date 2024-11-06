@@ -1,20 +1,31 @@
-
-import { FaEnvelope, FaLocationPin, FaLocationPinLock, FaPhone } from "react-icons/fa6"
-import InputField from "./InputField"
-import { FaRegUser, FaUnlockAlt } from "react-icons/fa"
-
+import { FaMapMarkerAlt, FaRegUser, FaUnlockAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa6";
+import InputField from "./InputField";
+import CountryFieldPicker from "./CountryFieldPicker";
 
 const RegisterScreen = () => {
   return (
-    <div className="flex flex-col gap-5 p-8">
-      <form className="flex flex-col gap-3">
-        <InputField Icon={FaRegUser} placeholder={"First Name (required)"} />
-        <InputField Icon={FaRegUser} placeholder={"Last Name (required)"} />
-        <InputField Icon={FaPhone} placeholder={"Phone (+92) (required)"} type={"number"} />
-        <InputField Icon={FaEnvelope} placeholder={"Email (required)"} type={"email"} />
-        <InputField Icon={FaUnlockAlt} placeholder={"Password (required)"} type={"password"}/>
-        <InputField Icon={FaUnlockAlt} placeholder={"Confirm Password (required)"} type={"password"}/>
-        <InputField Icon={FaLocationPin} placeholder={"City (required)"}/>
+    <div className="flex flex-col gap-5 p-8 relative">
+      <form className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <InputField Icon={FaRegUser} placeholder={"First Name "} />
+        <InputField Icon={FaRegUser} placeholder={"Last Name "} />
+        <CountryFieldPicker />
+        <InputField Icon={FaEnvelope} placeholder={"Email "} type={"email"} />
+        <InputField
+          Icon={FaUnlockAlt}
+          placeholder={"Password "}
+          type={"password"}
+        />
+        <InputField
+          Icon={FaUnlockAlt}
+          placeholder={"Confirm Password "}
+          type={"password"}
+        />
+        <InputField
+          className="sm:col-span-2"
+          Icon={FaMapMarkerAlt}
+          placeholder={"City "}
+        />
       </form>
       <a className="text-primary text-xs font-semibold" href="">
         Forgot Password?
@@ -23,7 +34,7 @@ const RegisterScreen = () => {
         LOGIN
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default RegisterScreen
+export default RegisterScreen;

@@ -15,11 +15,16 @@ import {
   Footer,
   AuthModal,
 } from "./components";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Achievements from "./components/achievements/Achievements";
+import AuthModalProvider, {
+  AuthModalContext,
+} from "./contexts/authModalContext";
 
 const App = () => {
   const [isScroll, setIsScroll] = useState(false);
+  const { isAuthModal } = useContext(AuthModalContext);
+
   const captureWindowScroll = () => {
     const scrollY = window.scrollY;
 
@@ -55,9 +60,8 @@ const App = () => {
       <AvailNow />
       <Footer />
 
-      {/* Authentication Modal */}
-      <AuthModal />
-
+      {/* Login / Register Modal */}
+      {isAuthModal && <AuthModal />}
     </div>
   );
 };
