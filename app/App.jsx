@@ -48,7 +48,7 @@ const App = () => {
       <Banner />
       <Navbar isScroll={isScroll} />
       <Hero />
-      {/* <Blogs />
+      <Blogs />
       <Courses />
       <Features />
       <FeatureTabs />
@@ -58,7 +58,7 @@ const App = () => {
       <DownloadApp />
       <Testimonial />
       <AvailNow />
-      <Footer /> */}
+      <Footer />
 
       {/* Login / Register Modal */}
       {isAuthModal && <AuthModal />}
