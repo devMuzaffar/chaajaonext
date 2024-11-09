@@ -8,6 +8,8 @@ import "swiper/css/effect-fade";
 import Card1 from "./cards/Card1";
 import Card2 from "./cards/Card2";
 import Card3 from "./cards/Card3";
+
+
 import SlidePrevButton from "./swiper/SlidePrevButton";
 import SlideNextButton from "./swiper/SlideNextButton";
 import { useState } from "react";
@@ -33,7 +35,7 @@ const Hero = () => {
         <Swiper
           modules={[Navigation]}
           slidesPerView={1}
-          spaceBetween={1}
+          spaceBetween={5}
           loop={false}
           onSlideChange={handleSlideChange}
           onInit={(swiper) => setIsBeginning(swiper.isBeginning)}
